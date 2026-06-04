@@ -14,7 +14,6 @@ on:
       - 'benchmark/**'
 jobs:
   test:
-    if: false  # Disabled: downgrade tests need review. See issue for details.
     strategy:
       matrix:
         julia-version: ['1.10']
