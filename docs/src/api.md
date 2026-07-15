@@ -7,6 +7,8 @@ BipartiteEdge
 Graphs.src(::BipartiteEdge)
 Graphs.dst(::BipartiteEdge)
 BipartiteGraphs.VertType
+SRC
+DST
 BipartiteGraph
 invview(::BipartiteGraph)
 complete(::BipartiteGraph{I}) where {I}

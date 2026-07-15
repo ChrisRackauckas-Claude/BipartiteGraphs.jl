@@ -1,9 +1,30 @@
 """
     @enum VertType SRC DST
 
-An enum for the two types of vertices (source and destination) in  a [`BipartiteGraph`](@ref).
+An enum for selecting the source or destination side of a [`BipartiteGraph`](@ref).
+See [`SRC`](@ref) and [`DST`](@ref).
 """
 @enum VertType SRC DST
+
+"""
+    SRC
+
+The source-side [`VertType`](@ref) selector for a [`BipartiteGraph`](@ref).
+
+Use `SRC` as the `VertType` argument to methods that operate on one side of the graph,
+such as `Graphs.add_vertex!(g, SRC)` to add a source vertex.
+"""
+SRC
+
+"""
+    DST
+
+The destination-side [`VertType`](@ref) selector for a [`BipartiteGraph`](@ref).
+
+Use `DST` as the `VertType` argument to methods that operate on one side of the graph,
+such as `Graphs.add_vertex!(g, DST)` to add a destination vertex.
+"""
+DST
 
 """
     $TYPEDEF
