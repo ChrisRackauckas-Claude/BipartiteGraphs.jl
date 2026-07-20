@@ -20,9 +20,7 @@ using Test
 #     element-type header when printing an array of `HighlightInt`.
 run_qa(
     BipartiteGraphs;
-    api_docs_kwargs = (; rendered = true),
     aqua_kwargs = (; unbound_args = false, deps_compat = false),
-    explicit_imports = true,
     ei_kwargs = (;
         all_qualified_accesses_are_public = (;
             ignore = (:OneTo, :print_matrix, :typeinfo_implicit),
