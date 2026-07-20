@@ -76,6 +76,7 @@ MatchedCondensationGraph
 ```@docs
 HyperGraph
 HyperEdge
+HyperGraphEdge
 Graphs.add_vertex!(::HyperGraph{V}, ::V) where {V}
 Graphs.add_edge!(::HyperGraph{V}, ::BipartiteGraphs.HyperGraphEdge{V}) where {V}
 Graphs.vertices(::HyperGraph)
@@ -87,4 +88,6 @@ Graphs.rem_edge!(::HyperGraph{V}, ::HyperEdge{V}) where {V}
 Graphs.edges(::HyperGraph{V}) where {V}
 Base.empty(::HyperGraph)
 Graphs.connected_components(::HyperGraph{V}) where {V}
+neighbors
+incident_edges
 ```
