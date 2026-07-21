@@ -1,5 +1,5 @@
 """
-    construct_augmenting_path!(m::Matching, g::BipartiteGraph, vsrc, dstfilter, vcolor=falses(ndsts(g)), ecolor=nothing) -> path_found::Bool
+    construct_augmenting_path!(m::Matching, g::BipartiteGraph, vsrc, dstfilter, vcolor = falses(ndsts(g)), ecolor = nothing) -> path_found::Bool
 
 Try to construct an augmenting path in matching and if such a path is found,
 update the matching accordingly.
